@@ -11,6 +11,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.android.customlistview.Model.Model;
+
 import com.android.customlistview.R;
 import com.squareup.picasso.Picasso;
 
