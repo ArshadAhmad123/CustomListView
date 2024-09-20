@@ -1,4 +1,4 @@
-package com.example.customlistview.Adapter;
+package com.android.customlistview.Adapter;
 
 public class Adat {
 
