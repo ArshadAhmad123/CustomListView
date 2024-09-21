@@ -7,23 +7,28 @@
     <LinearLayout
         android:paddingHorizontal="20dp"
         android:orientation="horizontal"
+        android:layout_margin="5dp"
+        android:background="@drawable/minar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
 
         <ImageView
             android:id="@+id/img"
+            android:src="@drawable/user"
             android:layout_width="100dp"
             android:layout_height="100dp" />
 
         <TextView
             android:id="@+id/tv"
+            android:text="Name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
             android:layout_marginLeft="10dp"
             android:textColor="#000"
             android:textSize="20sp" />
+
     </LinearLayout>
 
 </LinearLayout>

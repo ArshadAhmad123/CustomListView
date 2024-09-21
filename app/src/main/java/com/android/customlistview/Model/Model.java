@@ -2,13 +2,19 @@ package com.android.customlistview.Model;
 
 public class Model {
 
-    private String Image, Name;
+    private int Image;
+    private String Name;
 
-    public String getImage() {
+    public Model(String name,int image) {
+        Image = image;
+        Name = name;
+    }
+
+    public int getImage() {
         return Image;
     }
 
-    public void setImage(String image) {
+    public void setImage(int image) {
         Image = image;
     }
 
@@ -17,11 +23,6 @@ public class Model {
     }
 
     public void setName(String name) {
-        Name = name;
-    }
-
-    public Model(String image, String name) {
-        Image = image;
         Name = name;
     }
 }

@@ -19,7 +19,7 @@ import java.util.ArrayList;
 
 public class Adapter extends BaseAdapter {
 
-    ArrayList<Model> modelArrayList = new ArrayList<>();
+    ArrayList<Model> modelArrayList;
     Context context;
 
     public Adapter(Context context, ArrayList<Model> modelArrayList) {
@@ -55,9 +55,7 @@ public class Adapter extends BaseAdapter {
         final Model model = modelArrayList.get(position);
 
         textView.setText(model.getName());
-        if (!model.getImage().equals("")) {
-            Picasso.with(context).load(model.getImage()).into(imageView);
-        }
+        imageView.setImageResource(model.getImage());
         linearLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
